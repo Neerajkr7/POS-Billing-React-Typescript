@@ -31,7 +31,7 @@ const Form = (props: formProps) => {
                 </div>
 
                 <div className="button-group">
-                    <input type="submit" value="Save" />
+                    <input type="submit" value="Add" />
                     <input type="reset" value="Clear" />
                 </div>
             </form>
