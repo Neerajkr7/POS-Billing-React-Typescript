@@ -1,0 +1,49 @@
+{
+    "products": [
+        {
+            "id": "1000",
+            "name": "Rice",
+            "price": 34
+        },
+        {
+            "id": "1001",
+            "name": "Dhal",
+            "price": 12
+        },
+        {
+            "id": "1002",
+            "name": "Oil",
+            "price": 100
+        },
+        {
+            "id": "1003",
+            "name": "Sugar",
+            "price": 32
+        },
+        {
+            "id": "1004",
+            "name": "Tea",
+            "price": 54
+        },
+        {
+            "id": "1005",
+            "name": "Salt",
+            "price": 20
+        },
+        {
+            "id": "1006",
+            "name": "Chilli Powder",
+            "price": 21
+        },
+        {
+            "id": "1007",
+            "name": "Turmeric",
+            "price": 24
+        },
+        {
+            "id": "1008",
+            "name": "Mustard",
+            "price": 10
+        }
+    ]
+}

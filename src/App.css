@@ -1,27 +1,96 @@
-.App {
-  text-align: center;
+body{
+  background-color: #282c34;
+  color: #fefefe;
 }
 
+.button-group{
+  display: flex;
+}
+.button-group input{
+  width: 100%;
+  padding: 5px 0px;
+  border: none;
+}
+.button-group input:not(:last-child){
+  margin-right: 3px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.form-wrapper,
+.result-wrapper,
+.items-wrapper{
+  display: flex;
+  padding: 10px;
+}
+.form-container{
+  flex: 1;
+}
+.form-wrapper{
+  flex-direction: column;
+}
+.form-wrapper div{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.form-wrapper,
+.result-wrapper{
+  width: 100%;
+}
+.table-header{
+  display: none;
+}
+.table-header h5,p{
+  padding: 0;
+  margin: 5px;
+}
+.items-table{
+  width: 100%;
+  border: 1px solid #fefefe;
+  border-collapse: collapse;
+}
+.items-table th,td{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #fefefe;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+@page { size: auto;  margin: 0mm; }
+
+
+@media print{
+.result-wrapper{
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+  body{
+    color: #282c34;
+  }
+  .form-container{
+    display: none;
+  }
+
+  .items-table,
+  .items-table th,td{
+    border: 1px solid #282c34;
+  }
+  .table-header{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.App-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .App-link {
