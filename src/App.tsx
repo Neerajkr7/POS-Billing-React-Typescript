@@ -19,12 +19,12 @@ function App() {
     const newProducts = JSON.parse(JSON.stringify(products))
     const newItem: any = newProducts.find((product: tableItems) => product.id === args.id)
 
-    if (newItem !== null) {
+    if (newItem) {
       newItem.price = newItem.price * args.quantity
       newItem.quantity = args.quantity
       const newList = itemsList.concat(newItem)
       setItemsList(newList)
-    }
+    } else alert('Item not exist')
   }
   return (
     <div className="App">
