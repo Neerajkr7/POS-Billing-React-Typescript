@@ -5,7 +5,6 @@ import { products } from './data/grocery.json'
 import Form
   from './components/Form';
 import Result from './components/Result';
-import Items from './components/ItemsList';
 function App() {
   interface tableItems {
     id: String,

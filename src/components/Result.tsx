@@ -37,16 +37,16 @@ const Result = (props: any) => {
                     </tr>
                     <tr>
                         <td colSpan={3}>
-                            Total Items
+                            <b> Total Items</b>
                         </td>
-                        <td> {[...new Set(props.items.map((item: tableItems) => item.id))].length}</td>
+                        <td> <b>{[...new Set(props.items.map((item: tableItems) => item.id))].length}</b></td>
                     </tr>
                     <tr>
                         <td colSpan={3}>
-                            Total Price
+                            <b> Total Price</b>
                         </td>
                         <td>
-                            {props.items.reduce((acc: any, current: any) => acc + parseFloat(current.price), 0)}
+                            <b>  {props.items.reduce((acc: any, current: any) => acc + parseFloat(current.price), 0)}</b>
                         </td>
                     </tr>
                 </tbody>
